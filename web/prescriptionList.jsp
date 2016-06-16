@@ -17,7 +17,7 @@
         <title>HMSICARE</title>
         <%@include file="stylesAndScripts.jsp" %>
     </head>
-    <body style="background-color: #e4ebeb">
+    <body style="background-color: #eaf0f2">
         <%
             if (session.getAttribute("user") != null) {
                 int patientID = Integer.parseInt(request.getParameter("patientID"));

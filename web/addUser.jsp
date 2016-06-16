@@ -62,7 +62,7 @@
             }
         </script>
     </head>
-    <body style="background-color: #e4ebeb">
+    <body style="background-color: #eaf0f2">
         <%
             if (session.getAttribute("user") != null) {
                 User userper = (User) session.getAttribute("user");

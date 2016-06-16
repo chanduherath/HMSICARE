@@ -15,7 +15,7 @@
         <title>HMSICARE</title>
         <%@include file="stylesAndScripts.jsp" %>
     </head>
-    <body>
+    <body style="background-color: #eaf0f2">
         <div>
             <%@include file="header.jsp" %>
         </div>

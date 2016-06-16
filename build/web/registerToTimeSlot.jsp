@@ -32,7 +32,7 @@
                                 </select>
                             </div>
                             <div class="col-md-6">
-                                <input id = "pname" name = "pname" type = "text" class = "form-control" placeholder = "NAME" required="" pattern="[A-Za-z]+" >
+                                <input id = "pname" name = "pname" type = "text" class = "form-control" placeholder = "NAME" required="" pattern="[A-Za-z ]+" >
                             </div>
                         </div>
                         <div class="form-group col-md-12">

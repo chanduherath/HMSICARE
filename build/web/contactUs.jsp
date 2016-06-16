@@ -12,7 +12,7 @@
         <title>HMSICARE Contact Us</title>
         <%@include file="stylesAndScripts.jsp" %>
     </head>
-    <body style="background-color: #e4ebeb">
+    <body style="background-color: #eaf0f2">
         <div>
             <%@include file="header.jsp" %>
         </div> 

@@ -12,7 +12,7 @@
         <title>JSP Page</title>
         <%@include file="stylesAndScripts.jsp" %>
     </head>
-    <body style="background-color: #84cbc5;">
+    <body style="background-color: #eaf0f2;">
         <div>
             <img class="center-block" src="img/serverError.png" alt="SERVER ERROR OCCURED">
         </div>

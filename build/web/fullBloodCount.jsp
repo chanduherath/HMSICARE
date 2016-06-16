@@ -15,7 +15,7 @@
         <title>HMSICARE</title>
         <%@include file="stylesAndScripts.jsp" %>
     </head>
-    <body style="background-color: #d9e6e6">
+    <body style="background-color: #eaf0f2">
         <%
             if (session.getAttribute("user") != null) {
                 LabAssistant lassis = (LabAssistant) session.getAttribute("user");

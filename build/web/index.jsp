@@ -16,7 +16,7 @@
         <script type="text/javascript" src="engine1/jquery.js"></script>
         <!-- End WOWSlider.com HEAD section -->
     </head>
-    <body style="background-color: #e4ebeb">
+    <body style="background-color: #eaf0f2">
         <div>
             <%@include file="header.jsp" %>
         </div>
