@@ -65,6 +65,8 @@
     <body style="background-color: #e4ebeb">
         <%
             if (session.getAttribute("user") != null) {
+                User userper = (User) session.getAttribute("user");
+                if (userper.getUserLevel().equals("admin")) {
         %>
         <div id="wrapper" >
             <%@include file="sidebarMenu.jsp" %>
@@ -172,6 +174,9 @@
             </div>            <!-- /#page-content-wrapper -->
         </div>
         <% } else {
+                    response.sendRedirect("404error.jsp");
+                }
+            } else {
                 response.sendRedirect("login.jsp");
             }
         %>
