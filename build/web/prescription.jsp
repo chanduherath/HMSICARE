@@ -57,12 +57,12 @@
 
                                     <tr>
                                         <td colspan="6" style="width: 50%" class="info">Date</td>
-                                        <td colspan="6" style="width: 50%" class="form-group"><input name="date" type="date" class="form-control"></td>
+                                        <td colspan="6" style="width: 50%" class="form-group"><input name="date" type="date" class="form-control" required=""></td>
                                     </tr> 
 
                                     <tr>
                                         <td colspan="3" style="width: 25%" class="info">Diagnosed With</td>
-                                        <td colspan="9" style="width: 75%" class="form-group"><input name="diagnosed" type="text" class="form-control" placeholder="Diagnosed With" maxlength="20" pattern="[A-Za-z]+"></td>
+                                        <td colspan="9" style="width: 75%" class="form-group"><input name="diagnosed" type="text" class="form-control" placeholder="Diagnosed With" maxlength="20" pattern="[A-Za-z ]+"></td>
                                     </tr>
                                     <tr>
                                         <td colspan="3" style="width: 25%" class="info">Blood Pressure</td>
@@ -76,38 +76,38 @@
                                         <td colspan="4" style="width: 33%" class="info">Dosage(Per Day)</td>                  
                                     </tr>
                                     <tr>
-                                        <td colspan="4" style="width: 33%" class="form-group"><input name="drug1" type="text" class="form-control"  maxlength="15" pattern="[A-Za-z0-9]+"></td>
-                                        <td colspan="4" style="width: 34%" class="form-group"><input name="unit1" type="text" class="form-control" pattern="[A-Za-z0-9]+"></td>
+                                        <td colspan="4" style="width: 33%" class="form-group"><input name="drug1" type="text" class="form-control"  maxlength="15" pattern="[A-Za-z0-9 ]+"></td>
+                                        <td colspan="4" style="width: 34%" class="form-group"><input name="unit1" type="text" class="form-control" pattern="[A-Za-z0-9 ]+"></td>
                                         <td colspan="4" style="width: 33%" class="form-group"><input name="dosage1" type="text" class="form-control" pattern="[0-9]+"></td>
                                     </tr>
                                     <tr>
-                                        <td colspan="4" style="width: 33%" class="form-group"><input name="drug2" type="text" class="form-control"  maxlength="15" pattern="[A-Za-z0-9]+"></td>
+                                        <td colspan="4" style="width: 33%" class="form-group"><input name="drug2" type="text" class="form-control"  maxlength="15" pattern="[A-Za-z0-9 ]+"></td>
                                         <td colspan="4" style="width: 34%" class="form-group"><input name="unit2" type="text" class="form-control" pattern="[A-Za-z0-9]+"></td>
                                         <td colspan="4" style="width: 33%" class="form-group"><input name="dosage2" type="text" class="form-control" pattern="[A-Za-z0-9]+"></td>
                                     </tr>
                                     <tr>
-                                        <td colspan="4" style="width: 33%" class="form-group"><input name="drug3" type="text" class="form-control"  maxlength="15" pattern="[A-Za-z0-9]+" ></td>
-                                        <td colspan="4" style="width: 34%" class="form-group"><input name="unit3" type="text" class="form-control" pattern="[A-Za-z0-9]+"></td>
+                                        <td colspan="4" style="width: 33%" class="form-group"><input name="drug3" type="text" class="form-control"  maxlength="15" pattern="[A-Za-z0-9 ]+" ></td>
+                                        <td colspan="4" style="width: 34%" class="form-group"><input name="unit3" type="text" class="form-control" pattern="[A-Za-z0-9 ]+"></td>
                                         <td colspan="4" style="width: 33%" class="form-group"><input name="dosage3" type="text" class="form-control" pattern="[A-Za-z0-9]+"></td>
                                     </tr>
                                     <tr>
-                                        <td colspan="4" style="width: 33%" class="form-group"><input name="drug4" type="text" class="form-control"  maxlength="15" pattern="[A-Za-z0-9]+"></td>
-                                        <td colspan="4" style="width: 34%" class="form-group"><input name="unit4" type="text" class="form-control" pattern="[A-Za-z0-9]+"></td>
+                                        <td colspan="4" style="width: 33%" class="form-group"><input name="drug4" type="text" class="form-control"  maxlength="15" pattern="[A-Za-z0-9 ]+"></td>
+                                        <td colspan="4" style="width: 34%" class="form-group"><input name="unit4" type="text" class="form-control" pattern="[A-Za-z0-9 ]+"></td>
                                         <td colspan="4" style="width: 33%" class="form-group"><input name="dosage4" type="text" class="form-control" pattern="[A-Za-z0-9]+"></td>
                                     </tr>
                                     <tr>
-                                        <td colspan="4" style="width: 33%" class="form-group"><input name="drug5" type="text" class="form-control"  maxlength="15" pattern="[A-Za-z0-9]+"></td>
-                                        <td colspan="4" style="width: 34%" class="form-group"><input name="unit5" type="text" class="form-control" pattern="[A-Za-z0-9]+"></td>
+                                        <td colspan="4" style="width: 33%" class="form-group"><input name="drug5" type="text" class="form-control"  maxlength="15" pattern="[A-Za-z0-9 ]+"></td>
+                                        <td colspan="4" style="width: 34%" class="form-group"><input name="unit5" type="text" class="form-control" pattern="[A-Za-z0-9 ]+"></td>
                                         <td colspan="4" style="width: 33%" class="form-group"><input name="dosage5" type="text" class="form-control" pattern="[A-Za-z0-9]+"></td>
                                     </tr>
 
                                     <tr>
                                         <td colspan="3" style="width: 25%" class="info">Examination to be done(if any)</td>                
-                                        <td colspan="9" style="width: 75%" class="form-group"><input name="tests" type="text" class="form-control" placeholder="Any Tests?" maxlength="20" pattern="[A-Za-z0-9]+"></td>
+                                        <td colspan="9" style="width: 75%" class="form-group"><input name="tests" type="text" class="form-control" placeholder="Any Tests?" maxlength="20" pattern="[A-Za-z0-9 ]+"></td>
                                     </tr>
                                     <tr>
                                         <td colspan="3" style="width: 25%" class="info">Things to Follow</td>
-                                        <td colspan="9" style="width: 75%" class="form-group"><input name="follow" type="text" class="form-control" placeholder="Things to Follow?" maxlength="20" pattern="[A-Za-z0-9]+"></td>
+                                        <td colspan="9" style="width: 75%" class="form-group"><input name="follow" type="text" class="form-control" placeholder="Things to Follow?" maxlength="20" pattern="[A-Za-z0-9 ]+"></td>
                                     </tr>
                                     <input id="patientID" name="patientID" type="hidden" value="<%= p.getPatient_id()%>">
                                     <input id="docID" name="docID" type="hidden" value="<%= doc.getDoc_id()%>">
