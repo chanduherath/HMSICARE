@@ -30,7 +30,6 @@ public class SearchDoctor {
             ResultSet rsetUser = ps.executeQuery();
             System.out.println("bbb");
             while (rsetUser.next()) {
-                System.out.println("eee");
                 String query1 = "SELECT * from doctor WHERE user_user_id=" + rsetUser.getInt(1) + "";
                 PreparedStatement ps1 = con.prepareStatement(query1);
                 ResultSet rsetDoctor = ps1.executeQuery();
@@ -56,7 +55,6 @@ public class SearchDoctor {
             System.out.println(query);
             PreparedStatement ps = con.prepareStatement(query);
             ResultSet rsetUser = ps.executeQuery();
-            System.out.println("bbb");
             while (rsetUser.next()) {
                 Doctor doc = new Doctor(rsetUser.getInt(12), rsetUser.getString(13), rsetUser.getString(14), rsetUser.getInt(1), rsetUser.getString(2), rsetUser.getString(4), rsetUser.getString(5), rsetUser.getString(6), rsetUser.getString(7), rsetUser.getString(8), rsetUser.getString(9));
                 searchList.add(doc);
@@ -78,7 +76,6 @@ public class SearchDoctor {
             System.out.println(query);
             PreparedStatement ps = con.prepareStatement(query);
             ResultSet rsetUser = ps.executeQuery();
-            System.out.println("bbb");
             while (rsetUser.next()) {
                 Doctor doc = new Doctor(rsetUser.getInt(12), rsetUser.getString(13), rsetUser.getString(14), rsetUser.getInt(1), rsetUser.getString(2), rsetUser.getString(4), rsetUser.getString(5), rsetUser.getString(6), rsetUser.getString(7), rsetUser.getString(8), rsetUser.getString(9));
                 searchList.add(doc);
@@ -100,7 +97,6 @@ public class SearchDoctor {
             System.out.println(query);
             PreparedStatement ps = con.prepareStatement(query);
             ResultSet rsetUser = ps.executeQuery();
-            System.out.println("bbb");
             while (rsetUser.next()) {
                 Doctor doc = new Doctor(rsetUser.getInt(12), rsetUser.getString(13), rsetUser.getString(14), rsetUser.getInt(1), rsetUser.getString(2), rsetUser.getString(4), rsetUser.getString(5), rsetUser.getString(6), rsetUser.getString(7), rsetUser.getString(8), rsetUser.getString(9));
                 searchList.add(doc);
@@ -121,7 +117,6 @@ public class SearchDoctor {
             System.out.println(query);
             PreparedStatement ps = con.prepareStatement(query);
             ResultSet rsetUser = ps.executeQuery();
-            System.out.println("bbb");
             while (rsetUser.next()) {
                 Doctor doc = new Doctor(rsetUser.getInt(12), rsetUser.getString(13), rsetUser.getString(14), rsetUser.getInt(1), rsetUser.getString(2), rsetUser.getString(4), rsetUser.getString(5), rsetUser.getString(6), rsetUser.getString(7), rsetUser.getString(8), rsetUser.getString(9));
                 searchList.add(doc);
@@ -143,7 +138,6 @@ public class SearchDoctor {
             System.out.println(query);
             PreparedStatement ps = con.prepareStatement(query);
             ResultSet rsetUser = ps.executeQuery();
-            System.out.println("bbb");
             while (rsetUser.next()) {
                 Doctor doc = new Doctor(rsetUser.getInt(12), rsetUser.getString(13), rsetUser.getString(14), rsetUser.getInt(1), rsetUser.getString(2), rsetUser.getString(4), rsetUser.getString(5), rsetUser.getString(6), rsetUser.getString(7), rsetUser.getString(8), rsetUser.getString(9));
                 searchList.add(doc);
@@ -164,7 +158,6 @@ public class SearchDoctor {
             System.out.println(query);
             PreparedStatement ps = con.prepareStatement(query);
             ResultSet rsetUser = ps.executeQuery();
-            System.out.println("bbb");
             while (rsetUser.next()) {
                 Doctor doc = new Doctor(rsetUser.getInt(12), rsetUser.getString(13), rsetUser.getString(14), rsetUser.getInt(1), rsetUser.getString(2), rsetUser.getString(4), rsetUser.getString(5), rsetUser.getString(6), rsetUser.getString(7), rsetUser.getString(8), rsetUser.getString(9));
                 searchList.add(doc);
@@ -180,21 +173,16 @@ public class SearchDoctor {
     public Doctor getDoctorByUserID(int userID) {
         try {
 //            Doctor doc = new Doctor();
-            System.out.println("startt");
             Connection con = DBConnectionHandler.createConnection();
             //  String query = "SELECT * FROM doctor WHERE user_user_id=" + userID + "";
             String query = "SELECT * FROM user WHERE user_id=" + userID + "";
             PreparedStatement ps = con.prepareStatement(query);
             ResultSet rsetuser = ps.executeQuery();
-            System.out.println("stage 2");
             while (rsetuser.next()) {
-                System.out.println("stage 3");
                 String query1 = "SELECT * FROM doctor WHERE user_user_id=" + userID + "";
                 ps = con.prepareStatement(query1);
                 ResultSet rsetdoctor = ps.executeQuery();
-                System.out.println("stage 4");
                 while (rsetdoctor.next()) {
-                    System.out.println("ppppppppppppppppppp");
                     System.out.println();
                     Doctor doc = new Doctor(rsetdoctor.getInt(1), rsetdoctor.getString(2), rsetdoctor.getString(3), rsetuser.getInt(1), rsetuser.getString(2), rsetuser.getString(4), rsetuser.getString(5), rsetuser.getString(6), rsetuser.getString(7), rsetuser.getString(8), rsetuser.getString(9));
                     return doc;
@@ -210,22 +198,17 @@ public class SearchDoctor {
 
     public Doctor getDoctorByDocID(int docID) {
         try {
-            System.out.println("startt");
             Connection con = DBConnectionHandler.createConnection();           
             String query = "SELECT * FROM doctor WHERE doctor_id=?";
             PreparedStatement ps = con.prepareStatement(query);
             ps.setInt(1, docID);
             ResultSet rsetdoctor = ps.executeQuery();
-            System.out.println("stage 2");
             while (rsetdoctor.next()) {
-                System.out.println("stage 3");
                 String query1 = "SELECT * FROM user WHERE user_id=?";
                 ps = con.prepareStatement(query1);
                 ps.setInt(1, rsetdoctor.getInt(4));
                 ResultSet rsetuser = ps.executeQuery();
-                System.out.println("stage 4");
                 while (rsetuser.next()) {
-                    System.out.println("ppppppppppppppppppp");
                     System.out.println();
                     Doctor doc = new Doctor(rsetdoctor.getInt(1), rsetdoctor.getString(2), rsetdoctor.getString(3), rsetuser.getInt(1), rsetuser.getString(2), rsetuser.getString(4), rsetuser.getString(5), rsetuser.getString(6), rsetuser.getString(7), rsetuser.getString(8), rsetuser.getString(9));
                     return doc;
@@ -240,8 +223,8 @@ public class SearchDoctor {
     }
 //    public ArrayList<Doctor> getDoctorByNameAndSpec()
 
-    public static void main(String[] args) {
-        SearchDoctor d = new SearchDoctor();
+//    public static void main(String[] args) {
+//        SearchDoctor d = new SearchDoctor();
 //        ArrayList<Doctor> lst = d.getDoctorByNameAndSpecAndDate("r", "Physician", "2016-05-28");
 //        for (int i = 0; i < lst.size(); i++) {
 //            System.out.println(lst.get(i).getFname());
@@ -250,7 +233,7 @@ public class SearchDoctor {
 //            System.out.println(lst.get(i).getHospital());
 //            System.out.println(lst.get(i).getDoc_id());
 //        }
-        Doctor doc = d.getDoctorByDocID(7);
-        System.out.println(doc.getFname());
-    }
+//        Doctor doc = d.getDoctorByDocID(7);
+//        System.out.println(doc.getFname());
+//    }
 }

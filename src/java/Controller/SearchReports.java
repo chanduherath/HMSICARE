@@ -90,11 +90,8 @@ public class SearchReports {
                 String query1 = "SELECT * FROM report WHERE report_id=?";
                 ps = con.prepareStatement(query1);
                 ps.setInt(1, rsetfullbloodcount.getInt(14));
-                System.out.println("ccc");
                 ResultSet rsetreport = ps.executeQuery();
-                System.out.println("dd");
                 while (rsetreport.next()) {
-                    System.out.println("aaaa");
                     FullBloodCount blcnt = new FullBloodCount(rsetfullbloodcount.getInt(1), rsetfullbloodcount.getFloat(2), rsetfullbloodcount.getFloat(3), rsetfullbloodcount.getFloat(4), rsetfullbloodcount.getFloat(5), rsetfullbloodcount.getFloat(6), rsetfullbloodcount.getFloat(7), rsetfullbloodcount.getFloat(8), rsetfullbloodcount.getFloat(9), rsetfullbloodcount.getFloat(10), rsetfullbloodcount.getFloat(11), rsetfullbloodcount.getFloat(12), rsetfullbloodcount.getFloat(13), rsetreport.getInt(1), rsetreport.getInt(2), rsetreport.getInt(3), rsetreport.getString(4),rsetreport.getDate(5));
                     return blcnt;
                 }
@@ -116,15 +113,11 @@ public class SearchReports {
             ps.setInt(1, lipidprofileID);
             ResultSet rsetlipidprofile = ps.executeQuery();
             while (rsetlipidprofile.next()) {
-                System.out.println("bbb");
                 String query1 = "SELECT * FROM report WHERE report_id=?";
                 ps = con.prepareStatement(query1);
                 ps.setInt(1, rsetlipidprofile.getInt(8));
-                System.out.println("ccc");
                 ResultSet rsetreport = ps.executeQuery();
-                System.out.println("dd");
                 while (rsetreport.next()) {
-                    System.out.println("aaaa");
                     LipidProfile lpd = new LipidProfile(rsetlipidprofile.getInt(1), rsetlipidprofile.getFloat(2), rsetlipidprofile.getFloat(3), rsetlipidprofile.getFloat(4), rsetlipidprofile.getFloat(5), rsetlipidprofile.getFloat(6), rsetlipidprofile.getFloat(7), rsetreport.getInt(1), rsetreport.getInt(2), rsetreport.getInt(3), rsetreport.getString(4),rsetreport.getDate(5));
                     return lpd;
                 }
