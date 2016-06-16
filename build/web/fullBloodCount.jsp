@@ -12,7 +12,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>HMSICARE</title>
         <%@include file="stylesAndScripts.jsp" %>
     </head>
     <body style="background-color: #d9e6e6">

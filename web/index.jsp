@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>HMSICARE</title>
         <%@include file="stylesAndScripts.jsp" %>
         <!-- Start WOWSlider.com HEAD section -->
         <link rel="stylesheet" type="text/css" href="engine1/style.css" />

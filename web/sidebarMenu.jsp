@@ -11,7 +11,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>HMSICARE</title>
         <%@include file="stylesAndScripts.jsp" %>
     </head>
     <body>
@@ -24,7 +24,7 @@
                     <a href="#" style="text-align: center"><%= usrside.getUserLevel().toUpperCase()%></a>
                 </li>
                 <li>
-                    <a href="#"><img src="img/default-user.png" height="100" width="100" style="margin-left: 50px"></a>
+                    <a href="viewProfile.jsp"><img src="img/default-user.png" height="100" width="100" style="margin-left: 50px"></a>
                 </li>
                 <li>
                     <a href="viewProfile.jsp">View My Profile</a>
